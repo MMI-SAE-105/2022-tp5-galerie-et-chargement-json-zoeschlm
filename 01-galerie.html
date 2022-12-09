@@ -60,11 +60,14 @@
 
 
 <body  x-data="{imageaffichée:'https://picsum.photos/id/237/200/300'}">
+    <img src="" alt="" @click="imageaffichée=''">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iusto iure tempora ab quaerat molestiae quas,
         quae, distinctio animi, eligendi exercitationem alias. Dicta rerum ipsa, reprehenderit animi quaerat deleniti
         esse.</p>
-    <div class="overlay">
+    <div class="overlay" 
+    class="overlay" x-show="imageaffichée" 
+    @click="imageaffichée=null">
         <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
     </div>
 
