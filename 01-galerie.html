@@ -21,28 +21,32 @@
     place-content: center;
 
 }
-.overlay__after {
+.overlay::after {
     content: "X";
     color:white;
     background-color: black;
-    font-family: 'sans-serif';
+    font-family: sans-serif;
     text-align: center;
     line-height: 2rem;
    display: block;
     position: absolute;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    top: 1rem;
+    right: 1rem;
     width: 2rem;
     height: 2rem;
     border-color: white, 2px;
     border-radius: 50%;
+    border:solid;
+    
 }
-.overlay__figure {
+.overlay>figure {
     margin: none;
     padding: 1rem;
     border:2px;
+    border: solid;
+    color: white;
 }
-.overlay__figure-img {
+.overlay>figure>img {
     max-width: 100%;
     height:auto;
 }
