@@ -15,34 +15,34 @@ margin max-width padding place-content pointer position position
 rgba(0,0,0,0.9) right right sans-serif text-align top top width width
 }
 .overlay {
-    display: fixed;
+   max-width: 100%;
     width:100%;
     height: 100%;
-    /* Full height (cover the whole page) */
-    /* Stay at the top */
-    /* Stay at the left */
-    /* Stay at the right */
-    /* Stay at the bottom */
-    /* Black background with opacity */
-    /* Add a pointer on hover */
-    /* Use a grid for easy centering */
-    /* Center vertically and horizontally */
+    position: fixed;
+    right:auto;
+    left: auto;
+    margin-bottom: auto;
+    background-color: black;
+    cursor: pointer;
+    display:grid;
+    place-content: center;
+
 }
 .overlay::after {
     /* Add content : "X" */
-    /* White text color */
-    /* Black background color */
-    /* Font family "sans-serif" */
-    /* Centered text */
-    /* Line height ( idem height ) */
-    /* Display as a block */
-    /* Position absolute */
-    /* 1rem from the top */
-    /* 1rem from the right */
-    /* 2rem width */
-    /* 2rem height */
-    /* White border of 2px */
-    /* Rounded border */
+    color:white;
+    background-color: black;
+    font-family: 'sans-serif';
+    text-align: center;
+    line-height: 10%;
+   display: block;
+    position: absolute;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 2rem;
+    border-color: white;
+    border-radius: 5cm;
 }
 .overlay>figure {
     /* No margin */
